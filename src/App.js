@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import axios from 'axios';
 import './App.css';
-import headerImage from './Joke.png'
 
 class App extends Component {
  
@@ -75,7 +74,6 @@ class App extends Component {
         <div className='main-container'>
           <div className='action-container'>
             <h1>Want to hear a funny Joke?</h1>
-            {/* <img src={headerImage}/> */}
             <div className='button-container-joke'>
             <button class="pushable" onClick={this.getJoke}>
               <span class="shadow"></span>
