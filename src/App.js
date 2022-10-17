@@ -27,7 +27,7 @@ class App extends Component {
   }
 
   notFunny(){
-    if((this.state.joke != this.state.badJokes[this.state.badJokes.length -1]) && (this.state.joke != this.state.goodJokes[this.state.goodJokes.length -1])){
+    if((this.state.joke !== this.state.badJokes[this.state.badJokes.length -1]) && (this.state.joke !== this.state.goodJokes[this.state.goodJokes.length -1])){
       this.state.badJokes.push(this.state.joke)
       console.log(this.state.badJokes)
       this.forceUpdate()
@@ -35,7 +35,7 @@ class App extends Component {
   }
 
   prettyFunny(){
-    if((this.state.joke != this.state.goodJokes[this.state.goodJokes.length -1]) && (this.state.joke != this.state.badJokes[this.state.badJokes.length -1])){
+    if((this.state.joke !== this.state.goodJokes[this.state.goodJokes.length -1]) && (this.state.joke !== this.state.badJokes[this.state.badJokes.length -1])){
       this.state.goodJokes.push(this.state.joke)
       console.log(this.state.goodJokes)
       this.forceUpdate()
